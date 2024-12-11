@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberCode - Promociones</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e90ff, #1c1c1c);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #ffcc00;
+        }
+        .promo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            padding: 15px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0 5px;
+            color: #fff;
+        }
+        .cta {
+            margin-top: 30px;
+            font-size: 1.2em;
+            background: #ffcc00;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+        .cta:hover {
+            background: #ffc107;
+        }
+        .extra {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            color: #ffcc00;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .promo {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .card {
+                max-width: 90%;
+                margin: auto;
+            }
+        }
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .cta {
+                font-size: 1em;
+                padding: 8px 15px;
+            }
+            .extra {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💻 ¡CyberCode te equipa! 💻</h1>
+            <p>Los mejores programas para tu PC: ¡Originales, rápidos y seguros!</p>
+        </div>
+        <div class="promo">
+            <div class="card">
+                <img src="office.jpg" alt="Microsoft Office">
+                <h3>Microsoft Office</h3>
+                <p>Word, Excel, PowerPoint y más</p>
+            </div>
+            <div class="card">
+                <img src="antivirus.jpg" alt="Antivirus">
+                <h3>Antivirus</h3>
+                <p>Protección avanzada para tu PC</p>
+            </div>
+            <div class="card">
+                <img src="editor de video.jpg" alt="Editor de Video">
+                <h3>Editores de Video</h3>
+                <p>Crea contenido como un profesional</p>
+            </div>
+            <div class="card">
+                <img src="Paquete extra.jpg" alt="Paquete extra">
+                <h3>Paquete extra</h3>
+                <p>🎁 Por tu compra, te regalamos: <br>
+                    - Cursos de programación<br>
+                    - Edición de video<br>
+                    - Curso de inglés (básico, intermedio y avanzado)<br>
+                    ¡Y mucho más!</p>
+
+            </div>
+        </div>
+        <a href="#" class="cta">¡Contáctanos ahora!</a>
+    </div>
+</body>
+</html>
